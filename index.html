@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Exercicio Matematica</title>
+  </head>
+  <body>
+    <div id="app">
+      <span>{{n1}} + {{n2}} =</span>
+      <input type="text" v-model="n3" />
+      <span v-if="n1 + n2 == parseInt(n3)"> Acertou !! </span>
+      <span v-if="n1 + n2 != parseInt(n3) "> Errou !! </span>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
